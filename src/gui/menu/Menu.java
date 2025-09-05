@@ -31,9 +31,9 @@ public class Menu extends JPanel {
         {"Job Entry", "New Job", "Customize Job"},
         {"Staff Attendance"},
         {"Stock Management"},
-        {"Cost Calculation"},
-        {"~charts~"},
-        {"Pending Jobs"},
+//        {"Cost Calculation"},
+//        {"~charts~"},
+//        {"Pending Jobs"},
         {"~OTHER~"},
         {"Logout"}
     };

@@ -1,6 +1,5 @@
 package gui.application.form;
 
-import gui.application.form.other.Dashboard;
 import com.formdev.flatlaf.FlatClientProperties;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
 import com.formdev.flatlaf.util.UIScale;
@@ -17,7 +16,6 @@ import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import gui.application.Application;
-import gui.application.form.other.Dashboard;
 
 import gui.menu.Menu;
 import gui.menu.MenuAction;
@@ -74,13 +72,17 @@ public class MainForm extends JLayeredPane {
                 Application.showForm(new Dashboard());
             } else if (index == 1) {
                 if (subIndex == 1) {
-                    Application.showForm(new Dashboard());
+                    Application.showForm(new NewJob());
                 } else if (subIndex == 2) {
-                    Application.showForm(new Dashboard());
+                    Application.showForm(new NewJob());
                 } else {
                     action.cancel();
                 }
-            } else if (index == 9) {
+            } else if (index == 2) {
+                Application.showForm(new Attendance());
+            } else if (index == 3) {
+                Application.showForm(new StockManagement());
+            } else if (index == 4) {
                 Application.logout();
             } else {
                 action.cancel();

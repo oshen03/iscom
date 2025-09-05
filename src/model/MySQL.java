@@ -21,7 +21,7 @@ public class MySQL {
     
         if (connection == null) {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/iscom_printers","root","Vimandya@20030908");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/iscom_db","root","Vimandya@20030908");
         }                          
     }
     
@@ -40,4 +40,6 @@ public class MySQL {
         }
     
 }
+
+
 
